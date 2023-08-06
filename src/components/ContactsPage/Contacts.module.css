@@ -1,0 +1,56 @@
+
+.contactsImage{
+    position: relative;
+}
+.contactsImage img{
+    display: block;
+    width: 100%;
+    height: 70vh;
+}
+.contactsImage::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contactsImage h1{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    color: white;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 500;
+    z-index: 2;
+}
+.cl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.cl h2{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+.cl a{
+    text-decoration: none;
+   color: blue  ;
+}
+
+.cl p{
+    font-family: Montserrat;
+    font-weight: 600;
+    color:dimgrey;
+    font-size: 18px;
+}
+.contactsContent{
+    
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}

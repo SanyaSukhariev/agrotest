@@ -1,0 +1,171 @@
+.feedBg{
+    position: relative;
+}
+
+.feedBg img{
+    display: block;
+    width: 100%;
+    height: 90vh;
+   
+}
+.feedBg::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Значение альфа-канала определяет степень затемнения */
+      z-index: 1;
+      
+}
+.feedBg h1{
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    color: white;
+    z-index: 2;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 500;
+  }
+
+  /* infoPanel */
+
+  .infoPanel{   
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .infoConteiner{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .sectionLeft, .sectionRight {
+    flex: 1; /* Делаем обе секции равной ширины, чтобы они занимали всю доступную ширину */
+    padding: 20px;
+  }
+
+  /* .sectionLeft {
+    background-color: #f5a623;
+  }
+  
+  .sectionRight {
+    background-color: #7ed321;
+  } */
+
+.sectionLeft h3{
+  color:cadetblue;
+}
+.sectionLeft li{
+  list-style: none;
+  padding: 25px;
+}
+.sectionLeft a:hover{
+  font-size: 23px;
+}
+.sectionLeft a{
+  font-size: 18px;
+  font-weight: 600;
+}
+.sectionLeft a{
+  text-decoration: none;
+  color: #39b54a;
+}
+
+/* coksobiostatick */
+
+.koksiodiostatick h1{
+  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.koksiodiostatick p{
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+
+.column{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.termItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.term  {
+  display: inline-block;
+  padding: 20px;
+  min-width: 200px;
+  color: #39b54a;
+  font-size: 18px;
+  font-weight: 600;
+}
+.description{
+  display: inline-block;
+  padding: 20px;
+  min-width: 400px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+
+/* amino */
+.aminokislotu h1{
+  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.amino{
+  display: flex;
+  flex-direction: column;
+}
+.aminokislotu p{
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+/* vitamino */
+.vitamino h1{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color:cadetblue;
+}
+.vitamino h3{
+  color:rgb(62, 85, 86);
+  font-size: 23px;
+  font-weight: 600;
+}
+
+/* organik */
+
+.organik h1{
+  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color:cadetblue;
+}
+.organik p{ 
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Стили для обертки слайдера */
+.beautifulSlider {
+    width: 100vw; /* Занимает всю ширину экрана */
+    height: 100vh; /* Занимает всю высоту экрана */
+    display: flex;
+    overflow: hidden; /* Скрывает содержимое, которое выходит за границы слайдера */
+    
+  }
+  
+  /* Стили для слайдов */
+  .slide {
+  flex: 0 0 100%; /* Занимает 100% ширины слайдера */
+  height: 100%; /* Занимает всю высоту слайдера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  /* Стили для изображений в слайдах */
+  .slide img {
+    max-width: 100%; /* Максимальная ширина изображения в слайде */
+    max-height: 100%; /* Максимальная высота изображения в слайде */
+    object-fit: cover; /* Изображение заполняет всю площадь слайда с сохранением пропорций */
+  }
+  
+  .informations{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 200px;
+    margin-top: 120px;
+    z-index: 0;
+  }
+/* .contentInfo{
+    width: 1200px;
+    margin: 0 auto;
+} */
+.content{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.contentInfo h1{
+  font-family: Montserrat;
+    font-size: 48px;
+    line-height: 43px;
+    font-weight: 800;
+}
+.contentInfo p{
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 28px;
+    color: grey;
+    font-weight: 600;
+}
+  .imageInfo{
+   padding-left: 50px;
+    width: 500px;
+    height: 500px;
+
+  }
+  .image{
+    border-radius: 500px;
+  }
+  
+
+  .itemsInfo {
+    left: 50px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+
+  /* OurProducts */
+  .ourProducts{
+    margin-top: 200px;
+    padding: 80px;
+    background-color: #676767;
+  }
+  .ourProdContent{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ourProducts h1{
+    text-align: center;
+     font-size: 54px;
+     font-family: Montserrat;
+    /* writing-mode:vertical-lr; 
+    text-orientation:upright; 
+    font-size: 27px; 
+    text-align: center;  */
+    /* color:lightskyblue; */
+    color: white;
+
+  }
+
+.itemBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    /* padding: 100px; */
+   }
+
+ 
+ 
+  .box{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    background: url("https://svitagro.com.ua/wp-content/uploads/2018/05/shutterstock_325466795.jpg") no-repeat center center/cover;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 300px ;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    
+  }
+  .box:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+  
+  }
+  .box1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease;
+  
+  }
+  .box2:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+  
+  }
+
+.box1{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    background: url('https://svitagro.com.ua/wp-content/uploads/2018/05/shutterstock_445559818.jpg') no-repeat center center/cover;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    cursor: pointer;
+    
+    border-radius: 300px ;
+    background-size: cover; 
+    transition: transform 0.3s ease;
+}
+.itemBox a{
+    text-decoration: none;
+}
+.itemBox a:hover{
+    text-decoration: underline;
+    border: 2px solid darkseagreen;
+}
+.itemBox h2:hover{
+  color: deepskyblue
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+    background: url('https://svitagro.com.ua/wp-content/uploads/2021/05/friends-1149841-scaled.jpg') no-repeat center center/cover;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 300px ;
+    background-size: cover; 
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Partners  */
+.partners{
+   width: 1200px;
+   margin: 0 auto;
+   padding: 100px;
+}
+
+
+.partners h2{
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.ourPartners{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.ourPartners .items{
+    flex: 0 0 calc(33% - 10px); 
+    margin:7px;
+   
+}
+.items{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+
+}
+
+.items a{
+    text-decoration: none;
+    color:darkcyan;
+}
+.items a:hover{
+ color: palegreen;
+
+}
+.items p{
+  font-size: 18px;
+  color: #676767;
+  font-family: Montserrat;
+  font-weight: 400;
+
+}
+
+.contacts{
+    width: 1200px;
+   margin: 0 auto;
+  
+}
+.contacts h2{
+  font-family: Montserrat;
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.contactsInfo{
+    display: flex;
+    justify-content: space-around;
+}
+.maps{
+    margin-top: 100px;
+   
+}
+.contactsInfo p{
+    font-family: Montserrat;
+    font-weight: 600;
+    color:dimgrey;
+    font-size: 18px;
+}
+
+.footer{
+  display: flex;
+  background-color:black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+
+}
